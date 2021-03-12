@@ -57,15 +57,15 @@ export default function SinglePost() {
                             </div>
                         </div>
                     </div>
-                    <img 
+                    <img
                         src={singlePost.mainImage.asset.url}
                         alt={singlePost.title}
                         className="w-full object-cover rounded-t"
-                        style={{ height: "400px" }} 
+                        style={{ height: "400px" }}
                     />
                 </header>
                 <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full ">
-                    <BlockContent 
+                    <BlockContent
                         blocks={singlePost.body}
                         projectId="14diilnp"
                         dataset="production"

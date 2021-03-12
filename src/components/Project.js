@@ -15,7 +15,7 @@ export default function Project() {
                 link,
                 tags
             }`
-            )
+        )
             .then((data) => setProjectData(data))
             .catch(console.error);
     }, []);
