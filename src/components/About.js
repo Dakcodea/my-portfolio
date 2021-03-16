@@ -29,8 +29,8 @@ export default function About() {
         <main className="relative">
             <img
                 src={redrivergorge}
-                alt="Red River Gorge"
-                className="absolute w-full"
+                alt="Pine Needels"
+                className="absolute min-h-screen w-full"
             />
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-green-600 rounded-lg shadow-2xl lg:flex p-20">
