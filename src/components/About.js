@@ -30,7 +30,7 @@ export default function About() {
             <img
                 src={redrivergorge}
                 alt="Pine Needels"
-                className="absolute min-h-screen w-full"
+                className="absolute object-cover min-h-screen w-full"
             />
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-green-600 rounded-lg shadow-2xl lg:flex p-20">

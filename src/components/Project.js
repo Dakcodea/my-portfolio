@@ -10,6 +10,13 @@ export default function Project() {
                 title,
                 date,
                 place,
+                mainImage{
+                    asset->{
+                        _id,
+                        url
+                    },
+                    alt
+                },
                 description,
                 projectType,
                 link,
@@ -27,9 +34,10 @@ export default function Project() {
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">
                     Welcome to my projects page!
                 </h2>
-                <section className="grid grid-cols-2 gap-8">
+                <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projectData && projectData.map((project, index) => (
-                        <article className="relative rounded-lg shadow-xl bg-white p-16">
+                        <article className="block relative rounded-lg shadow-xl bg-white p-16">
+
                             <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                                 <a
                                     href={project.link}
@@ -53,6 +61,16 @@ export default function Project() {
                                     <strong className="font-bold">Type</strong>:{" "}
                                     {project.projectType}
                                 </span>
+                                <span
+
+                                    key={index}
+                                >
+                                    <img
+                                        src={project.mainImage.asset.url}
+                                        alt={project.mainImage.alt}
+                                        className="py-3 w-72 h-96 rounded-r object-cover"
+                                    />
+                                </span>
                                 <p className="my-6 text-lg text-gray-700 leading-relaxed">
                                     {project.description}
                                 </p>
@@ -67,6 +85,7 @@ export default function Project() {
                                 </span>
                                 </a>
                             </div>
+
                         </article>
                     ))}
                 </section>

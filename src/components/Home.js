@@ -6,12 +6,12 @@ export default function Home() {
         <main>
             <img
                 src={image}
-                alt="Fungus"
-                className="absolute object-cover w-full h-full"
+                alt="Earth from Moon"
+                className="absolute min-h-screen object-cover w-full"
             />
-            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+            <section className="relative flex justify-center pt-12 lg:pt-64 px-8">
                 <h1
-                    className="text-6xl text-gray-50 font-bold cursive leading-none lg:leading-snug home-name"
+                    className="text-9xl text-gray-50 font-bold cursive leading-none lg:leading-snug home-name"
                 >
                     Hello. I'm Dakota
                 </h1>
